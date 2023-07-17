@@ -13,9 +13,5 @@ fn main() {
 }
 
 fn enumerate() {
-    let api: HidApi = HidApi::new().unwrap();
-
-    for device in api.device_list() {
-        println!("{:04x}:{:04x}", device.vendor_id(), device.product_id());
-    }
+    let  _ = HidApi::new().unwrap();
 }
